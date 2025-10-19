@@ -39,8 +39,13 @@ export default function Home() {
 
       // Step 2: Fetch Builds
       const oneWeekAgo = Math.floor(Date.now() / 1000) - 7 * 24 * 60 * 60;
+      // const buildRes = await fetch(
+      //   `https://api.deadlock-api.com/v1/builds?min_published_unix_timestamp=${oneWeekAgo}&only_latest=true&hero_id=${randomHero.id}`
+      // );
+
+      // Take only builds from Lordjaponas
       const buildRes = await fetch(
-        `https://api.deadlock-api.com/v1/builds?min_published_unix_timestamp=${oneWeekAgo}&only_latest=true&hero_id=${randomHero.id}`
+        `https://api.deadlock-api.com/v1/builds?author_id=76561198039863379&only_latest=true&hero_id=${randomHero.id}`
       );
       const buildData = await buildRes.json();
 
@@ -86,7 +91,6 @@ export default function Home() {
                 alt={hero.name}
                 className="mb-4"
               />
-              {/* <p className="text-sm opacity-70">ID: {hero.id}</p> */}
             </div>
           )}
         </div>
@@ -112,6 +116,27 @@ export default function Home() {
       {error && (
         <p className="text-red-400 mt-6 font-semibold">Error: {error}</p>
       )}
+
+      <footer className="mt-12 text-gray-400 text-sm">
+        Created by{" "}
+        <a
+          href="https://neutronas.eu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-red-400 hover:underline"
+        >
+          NeuTronas
+        </a>{" "}
+        | Idea by{" "}
+        <a
+          href="https://steamcommunity.com/profiles/76561198039863379"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-red-400 hover:underline"
+        >
+          lordjaponas
+        </a>
+      </footer>
     </div>
   );
 }
