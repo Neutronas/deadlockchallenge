@@ -1,13 +1,13 @@
 self.__BUILD_MANIFEST = {
   "/_error": [
-    "./static/chunks/c92666ef04e60b84.js"
+    "./static/chunks/01d3d78462c55751.js"
   ],
   "__rewrites": {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/deadlock-challenge//_next/:path+",
-        "destination": "/deadlock-challenge/_next/:path+"
+        "source": "/deadlockchallenge//_next/:path+",
+        "destination": "/deadlockchallenge/_next/:path+"
       }
     ],
     "fallback": []
