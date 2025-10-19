@@ -3,7 +3,7 @@
 A simple **Next.js** web app that gives you a **random hero challenge** from Deadlock.  
 It fetches all available heroes, retrieves their **most recent builds** (from the past week), and generates a **unique challenge** to play.
 
----
+## It is already hosted on [Vercel](<https://nextjs.org/)https://deadlockchallenge.vercel.app/>)
 
 ## 🚀 Features
 
