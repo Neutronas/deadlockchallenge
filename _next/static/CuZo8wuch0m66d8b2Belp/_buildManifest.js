@@ -1,15 +1,10 @@
 self.__BUILD_MANIFEST = {
   "/_error": [
-    "./static/chunks/71fb559e9e6f148d.js"
+    "./static/chunks/d769e159c4ee9d73.js"
   ],
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [
-      {
-        "source": "/deadlockchallenge//_next/:path+",
-        "destination": "/deadlockchallenge/_next/:path+"
-      }
-    ],
+    "beforeFiles": [],
     "fallback": []
   },
   "sortedPages": [
