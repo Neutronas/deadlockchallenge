@@ -5,6 +5,7 @@ const nextConfig = {
   images: { unoptimized: true },
   basePath: isProd ? "/deadlockchallenge" : "",
   assetPrefix: isProd ? "/deadlockchallenge/" : "",
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
