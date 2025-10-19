@@ -1,12 +1,10 @@
-import type { NextConfig } from "next";
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
-  output: "export", // enables static HTML export
-  images: { unoptimized: true }, // disable Next image optimization
-  basePath: "/deadlockchallenge", // your repo name here
-  assetPrefix: "/deadlockchallenge/",
+  output: "export",
+  images: { unoptimized: true },
+  basePath: isProd ? "/deadlockchallenge" : "",
+  assetPrefix: isProd ? "/deadlockchallenge/" : "",
 };
 
 module.exports = nextConfig;
-
-export default nextConfig;
