@@ -134,7 +134,7 @@ export default function Home() {
           rel="noopener noreferrer"
           className="text-red-400 hover:underline"
         >
-          lordjaponas
+          BudgieYellow
         </a>
       </footer>
     </div>
